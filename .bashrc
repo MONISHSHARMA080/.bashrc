@@ -116,7 +116,6 @@ if ! shopt -oq posix; then
   fi
 fi
 alias cc="clear"
-alias gc =" git commit -am"
 PS1='\[\e[1;32m\]\u@\h \[\e[0m\]\w \[\e[1;31m\]$(__git_ps1 " (%s)") \[\e[0m\]\$ '
 alias vi="nvim"
 alias esdc="npx expo start --dev-client"
@@ -133,3 +132,5 @@ function gacp() {
     git push
   fi
 }
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools
